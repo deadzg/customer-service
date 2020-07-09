@@ -35,6 +35,9 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    // https://mvnrepository.com/artifact/net.jodah/concurrentunit
+    testCompile group: 'net.jodah', name: 'concurrentunit', version: '0.4.6'
+
 }
 
 test.classpath += configurations.developmentOnly

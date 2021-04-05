@@ -8,6 +8,8 @@ import io.micronaut.http.annotation.Get;
 public class CustomerController {
     @Get(produces = MediaType.TEXT_PLAIN)
     public String customer() {
+        float y = 12.3f;
+        double z = 12;
         return "Customer Returned";
     }
 }
